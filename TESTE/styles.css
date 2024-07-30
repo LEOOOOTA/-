@@ -1,0 +1,39 @@
+body {
+    font-family: 'NomeDaFonte', sans-serif; /* Substitua 'NomeDaFonte' pelo nome da fonte que você escolheu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#temporizador {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+#hours, #minutes, #seconds {
+    padding: 0 10px;
+}
+
+#imagem-container {
+    margin-top: 20px;
+}
+
+#imagem {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Inicialmente ocultar a imagem */
+}
+
+
+
