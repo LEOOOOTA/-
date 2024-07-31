@@ -2,9 +2,9 @@ function updateTimer() {
     // Obtém a data e hora atuais
     const now = new Date();
     
-    // Define o horário alvo para 20:47
+    // Define o horário alvo para 21:00
     const target = new Date();
-    target.setHours(20, 47, 0, 0); // 20:47:00
+    target.setHours(21, 00, 0); // 21:00:00
     
     // Se o horário alvo já passou para hoje, define o alvo para o próximo dia
     if (now > target) {
@@ -21,8 +21,10 @@ function updateTimer() {
         document.getElementById('minutes').textContent = '00';
         document.getElementById('seconds').textContent = '00';
         
-        // Exibe a imagem
-        document.getElementById('imagem').style.display = 'block';
+        // Atualiza e exibe a imagem
+        const imgElement = document.getElementById('imagem');
+        imgElement.src = 'celebration.jpg'; // Coloque o caminho da sua imagem aqui
+        imgElement.style.display = 'block'; // Exibe a imagem
         
         return;
     }
@@ -43,6 +45,7 @@ const timerInterval = setInterval(updateTimer, 1000);
 
 // Inicializa o temporizador imediatamente
 updateTimer();
+
 
 
         
